@@ -13,16 +13,6 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1">
    <children>
-      <TextField editable="false" layoutY="-1.0" prefHeight="39.0" prefWidth="239.0" style="-fx-background-color: silver;" text="Songs List" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="361.0" AnchorPane.topAnchor="1.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </TextField>
-      <TextField editable="false" layoutX="238.0" layoutY="-1.0" prefHeight="39.0" prefWidth="361.0" style="-fx-background-color: Silver;" text="Song Detail" AnchorPane.bottomAnchor="360.0" AnchorPane.leftAnchor="240.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
-         <font>
-            <Font size="19.0" />
-         </font>
-      </TextField>
       <ListView layoutX="5.0" layoutY="40.0" prefHeight="357.0" prefWidth="239.0" style="-fx-padding: 10;" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="360.0" AnchorPane.topAnchor="41.0" />
       <Button layoutX="364.0" layoutY="344.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="New" />
       <Button layoutX="447.0" layoutY="344.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Edit" />
@@ -42,16 +32,31 @@
             <Bloom />
          </effect>
          <children>
-            <Label style="-fx-label-padding: 5;" text="Name:" />
+            <Label style="-fx-label-padding: 5;" text="Name*:" />
             <Label style="-fx-label-padding: 5;" text="Album:" GridPane.rowIndex="2" />
-            <Label style="-fx-label-padding: 5;" text="Artist:" GridPane.rowIndex="1" />
+            <Label style="-fx-label-padding: 5;" text="Artist*:" GridPane.rowIndex="1" />
             <Label style="-fx-label-padding: 5;" text="Year:" GridPane.rowIndex="3" />
-            <TextField editable="false" prefHeight="37.0" prefWidth="289.0" GridPane.columnIndex="1" />
-            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.rowIndex="1" />
-            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.rowIndex="2" />
-            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+            <TextField editable="false" prefHeight="37.0" prefWidth="289.0" promptText="Song Name" GridPane.columnIndex="1" />
+            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" promptText="Song Artist" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" promptText="Song Album" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <TextField editable="false" prefHeight="37.0" prefWidth="294.0" promptText="Song Year" GridPane.columnIndex="1" GridPane.rowIndex="3" />
          </children>
       </GridPane>
       <Button disable="true" layoutX="527.0" layoutY="243.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="60.0" text="Done" />
+      <Label layoutX="1.0" layoutY="1.0" prefHeight="37.0" prefWidth="239.0" text="Songs List" AnchorPane.bottomAnchor="362.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="359.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="241.0" layoutY="1.0" prefHeight="37.0" prefWidth="350.0" text="Song Detail" AnchorPane.bottomAnchor="362.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="1.0">
+         <font>
+            <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+         </font>
+      </Label>
+      <Label layoutX="249.0" layoutY="4.0" prefHeight="37.0" prefWidth="350.0" style="visibility: false;" text="Add Song Detail">
+         <font>
+            <Font name="Apple SD GothicNeo ExtraBold" size="19.0" />
+         </font>
+      </Label>
    </children>
 </AnchorPane>
